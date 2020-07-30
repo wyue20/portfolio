@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7Z45LZ7YD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7Z45LZ7YD');
+</script>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Yue Wang's Contact</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="icon" type="image/png" href="images/logofavicon.png"/>
+</head>
+<body id = "contact">
+	<div class = "loader-wrapper">
+        <div class="loader">
+				<div class="ball ball-1"></div>
+				<div class="ball ball-2"></div>
+				<div class="ball ball-3"></div>
+				<div class="ball ball-4"></div>
+				<div class="ball ball-5"></div>
+			  <p class="loader__txt">Loading...<br>
+                努力加载中！<br>
+                ローディング(*´∇｀*) 読み込み中<br></p>
+        </div>
+    </div>
+	<a class = "skip" href="#main">Skip to Main Content</a>
+	<header id="header">
+		<div class="progress-container">
+			<div class="progress-bar" id="myBar"></div>
+		</div>
+		<script>
+			// scroll indicator: https://www.w3schools.com/howto/howto_js_scroll_indicator.asp
+			// When the user scrolls the page, execute myFunction 
+			window.onscroll = function() {myFunction()};
+			
+			function myFunction() {
+			  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+			  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+			  var scrolled = (winScroll / height) * 100;
+			  document.getElementById("myBar").style.width = scrolled + "%";
+			}
+			</script>
+		<!--<img src="images/logo.png" alt="logo" id = "logo"> -->
+		<nav>
+			<ul class = "nav_links">
+				<li class = "item"><a href="index.html">Home</a></li>
+				<li class = "item"><a href="gallery.html">Gallery</a></li>
+				<li class = "item"><a class = "current" href="contact.html">Contact</a></li>
+				<li class = "item"><a href="resume.html">Resume</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main id="main" tabindex=0>
+		<script>
+            $(window).on("load",function(){
+                $(".loader-wrapper").fadeOut("slow");
+            });
+        </script>
+		<div id = "typewriter">Shoot me a message :)
+			<div id = "border"></div></div>
+		<div class="container">
+			<form action="https://formspree.io/xpzlzeqz" method="POST">
+				<label for="firstname">First Name</label>
+				<input type="text" id="firstname" name="firstname" placeholder="Please enter your first name">
+			
+				<label for="lastname">Last Name</label>
+				<input type="text" id="lastname" name="lastname" placeholder="Please enter your last name">
+  
+				<label for="email">Your Email</label>
+				<input type="text" id="email" name="email" placeholder="Please enter your perferred contact email address">
+				
+				<label for="request">Request</label>
+				<select id="request" name="request">
+				  <option value="business">Business</option>
+				  <option value="personal">Personal</option>
+				  <option value="whatever">Whatever, just wanna say hi:D</option>
+				  <!-- https://www.w3schools.com/howto/howto_css_contact_form.asp -->
+				</select>
+				
+				<label for="message">Message</label>
+				<textarea id="message" name="message" placeholder="Hi!" style="height:150px"></textarea>
+			
+				<button type="submit"><h1>Send</h1></button>
+			</form>
+		</div>
+		<div class = "cover" tabindex="0">
+			<div class="cover1"></div>
+			<div class="cover2"></div>
+			<div class="cover3"></div>
+			<div class="cover-text" style="font-size: 32px; text-align: center; padding-top: 20%;">
+				<p>"Hello World"</p>
+				<div class="bounceball"></div>
+				<div class="bounceball1"></div>
+				<div class="bounceball2"></div>
+				<div class="bounceball3"></div>
+				<div class="bounceball4"></div>
+
+			</div>
+			<div class="cover5"></div>
+			<div class="cover6"></div>
+			<div class="cover7"></div>
+			<div class="cover8"></div>
+		</div>
+		<!-- <div class="message"><p>次はどこへ行こうか、何をしようか。</p></div> -->
+		<!-- <div class = "pics" tabindex=0>
+			<div class="pics1"></div>
+			<div class="pics2"></div>
+			<div class="pics3"></div>
+			<div class="pics4"></div>
+			<div class="pics5"></div>
+			<div class="pics6"></div>
+			<div class="pics7"></div>
+			<div class="pics8"></div>
+
+		</div> -->
+		<ul>
+			<li>
+				<a class="back_top" href="#header">Back to the Top</a>
+			</li>
+		</ul>
+
+	</main>
+
+
+	<footer>
+		<div class=footer_list>
+			<p>Yue Wang &copy; 2020</p>
+			<div class="footer_icon">
+				<a href="https://github.com/wyue20"><img src="images/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus.png" alt="github" class="github" aria-label="github"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

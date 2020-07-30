@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7Z45LZ7YD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7Z45LZ7YD');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Yue Wang's Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="images/logofavicon.png"/>
+</head>
+<body id = "gallery">
+    <div class = "loader-wrapper">
+        <div class="loader">
+                <div class="ball ball-1"></div>
+                <div class="ball ball-2"></div>
+                <div class="ball ball-3"></div>
+                <div class="ball ball-4"></div>
+                <div class="ball ball-5"></div>
+              <p class="loader__txt">Loading...<br>
+                努力加载中！<br>
+                ローディング(*´∇｀*) 読み込み中<br></p>
+        </div>
+    </div>
+    <a class = "skip" href="#main">Skip to Main Content</a>
+    <header id="header">
+        <div class="progress-container">
+			<div class="progress-bar" id="myBar"></div>
+        </div>
+        <script>
+            // scroll indicator: https://www.w3schools.com/howto/howto_js_scroll_indicator.asp
+            // When the user scrolls the page, execute myFunction 
+            window.onscroll = function() {myFunction()};
+            
+            function myFunction() {
+              var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+              var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+              var scrolled = (winScroll / height) * 100;
+              document.getElementById("myBar").style.width = scrolled + "%";
+            }
+            </script>
+        <!--<img src="images/logo.png" alt="logo" id = "logo"> -->
+        <nav>
+            <ul class = "nav_links">
+                <li class = "item"><a href="index.html">Home</a></li>
+                <li class = "item"><a href="gallery.html">Gallery</a></li>
+                <li class = "item"><a href="contact.html">Contact</a></li>
+                <li class = "item"><a class = "current" href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+	<main class = "design" id="main" tabindex=0>
+        <script>
+            $(window).on("load",function(){
+                $(".loader-wrapper").fadeOut("slow");
+            });
+        </script>
+        <div class = "course582">
+            <img src = "images/582-1.png" alt = "582-1"/>
+            <img src = "images/582-2.png" alt = "582-2"/>
+            <img src = "images/582-3.png" alt = "582-3"/>
+            <img src = "images/582-4.png" alt = "582-4"/>
+            <img src = "images/582-5.png" alt = "582-5"/>
+        </div>
+    </main>
+
+    <footer>
+        <div class=footer_list>
+            <p>Yue Wang &copy; 2020</p>
+            <div class="footer_icon">
+                <a href="https://github.com/wyue20"><img src="images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="github" class="github" aria-label="github"></a>
+            </div>
+        </div>
+    </footer>
+    </body>
+    </html>
+    

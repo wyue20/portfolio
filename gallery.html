@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7Z45LZ7YD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7Z45LZ7YD');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Yue Wang's Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="images/logofavicon.png"/>
+</head>
+<body id = "gallery">
+    <div class = "loader-wrapper">
+        <div class="loader">
+                <div class="ball ball-1"></div>
+                <div class="ball ball-2"></div>
+                <div class="ball ball-3"></div>
+                <div class="ball ball-4"></div>
+                <div class="ball ball-5"></div>
+              <p class="loader__txt">Loading...<br>
+                努力加载中！<br>
+                ローディング(*´∇｀*) 読み込み中<br></p>
+        </div>
+    </div>
+    <a class = "skip" href="#main">Skip to Main Content</a>
+    <header id="header">
+        <div class="progress-container">
+			<div class="progress-bar" id="myBar"></div>
+        </div>
+        <script>
+            // scroll indicator: https://www.w3schools.com/howto/howto_js_scroll_indicator.asp
+            // When the user scrolls the page, execute myFunction 
+            window.onscroll = function() {myFunction()};
+            
+            function myFunction() {
+              var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+              var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+              var scrolled = (winScroll / height) * 100;
+              document.getElementById("myBar").style.width = scrolled + "%";
+            }
+            </script>
+        <!--<img src="images/logo.png" alt="logo" id = "logo"> -->
+        <nav>
+            <ul class = "nav_links">
+                <li class = "item"><a href="index.html">Home</a></li>
+                <li class = "item"><a class = "current" href="gallery.html">Gallery</a></li>
+                <li class = "item"><a href="contact.html">Contact</a></li>
+                <li class = "item"><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <main class = "projects" id="main" tabindex=0>
+        <script>
+            $(window).on("load",function(){
+                $(".loader-wrapper").fadeOut("slow");
+            });
+        </script>
+        <h1>Graphic Designs | 2020</h1>
+
+
+        <h1>Botanical Illustrations | 2019</h1>
+            <div class = "project1" tabindex="1">
+                <img src = "images/botanical_illustration.png" alt = "plant"/>
+                <img src = "images/botanical_illustration(2).png" alt = "plant2"/>
+                <img src = "images/botanical_illustration(3).png" alt = "plant3"/>
+            </div>
+        
+        <h1>Class Banners | 2019</h1>
+            <div class = "project2" tabindex="1">
+                <img src = "images/banner1.png" alt = "banner1"/>
+                <img src = "images/banner2.png" alt = "banner2"/>
+                <img src = "images/color_palette.png" alt = "color_palette"/>
+            </div>
+        
+        <h1>Brand Identity Guidelines | 2019</h1>
+            <div class = "project3" tabindex="1">
+                <img src = "images/logo1.png" alt = "logo1"/>
+                <img src = "images/logo2.png" alt = "logo2"/>
+                <img src = "images/logo3.png" alt = "logo3"/>
+                <img src = "images/logo4.png" alt = "logo4"/>
+                <img src = "images/logo5.png" alt = "logo5"/>
+                <img src = "images/logo6.png" alt = "logo6"/>
+                <img src = "images/logo7.png" alt = "logo7"/>
+                <img src = "images/logo8.png" alt = "logo8"/>
+            </div>
+            <div class="message"><p>Wow good to see you here! Hope you enjoyed the journey!</p></div>
+	    <ul>
+                <li>
+                    <a class="back_top" href="#header">Back to the Top</a>
+                </li>
+            </ul>
+    </main>
+
+
+    <footer>
+        <div class=footer_list>
+			<p>Yue Wang &copy; 2020</p>
+			<div class="footer_icon">
+				<a href="https://github.com/wyue20"><img src="images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="github" class="github" aria-label="github"></a>
+			</div>
+		</div>
+    </footer>
+</body>
+</html>
